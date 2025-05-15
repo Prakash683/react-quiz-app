@@ -32,7 +32,8 @@ npm run dev
 ```
 The app will be available at http://localhost:5173 (default Vite port).
 
-###📁 Folder Structure
+## 📁 Folder Structure
+
 ```bash
 src/
 ├── components/
