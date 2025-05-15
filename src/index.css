@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.App, .quiz-container {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #4caf50;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin: 20px 0;
+  color: #222;
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+  height: 20px;
+  width: 90%;
+  max-width: 600px;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 10px;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Option Button */
+.option-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #add8e6; /* light blue */
+  border: 2px solid #87ceeb;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 90%;
+  max-width: 300px;
+  min-height: 44px; /* mobile tap size */
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.option-btn:hover {
+  background-color: #d3d3d3; /* light grey */
+}
+
+.option-btn.correct {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+.option-btn.wrong {
+  background-color: #f44336;
+  color: white;
+  border-color: #f44336;
+}
+
+/* Restart Button */
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  max-width: 200px;
+  width: 90%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .option-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .progress-bar-container {
+    height: 15px;
+  }
+}
